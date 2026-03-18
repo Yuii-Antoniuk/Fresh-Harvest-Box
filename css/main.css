@@ -1,1 +1,9 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -4%;
+}/*# sourceMappingURL=main.css.map */
