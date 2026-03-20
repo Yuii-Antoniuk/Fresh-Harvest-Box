@@ -1,9 +1,144 @@
 * {
   margin: 0;
-  padding: 0 15px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
   letter-spacing: -4%;
+}
+
+.organicfruits {
+  height: 1599px;
+  background-color: #ae1332;
+  color: white;
+}
+
+.organicfruits__container {
+  height: 100%;
+  width: 1215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.organicfruits__textbox {
+  width: 624px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.organicfruits__h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.organicfruits__subtitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+.organicfruits__cardslist {
+  width: 100%;
+  height: 1443px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  gap: 24px;
+  list-style: none;
+}
+
+.cardslist__item {
+  width: 389px;
+  height: 465px;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cardslist__item-strawbery {
+  background-color: #f8766b;
+}
+.cardslist__item-banana {
+  background-color: #edd251;
+}
+.cardslist__item-watermelon {
+  background-color: #9dc262;
+}
+.cardslist__item-lime {
+  background-color: #bfd663;
+}
+.cardslist__item-aple {
+  background-color: #e93f29;
+}
+.cardslist__item-peach {
+  background-color: #db4f4b;
+}
+.cardslist__item-plumus {
+  background-color: #9b5366;
+}
+.cardslist__item-orange {
+  background-color: #f47f4c;
+}
+.cardslist__item-kiwi {
+  background-color: #98b37e;
+}
+
+.card__title {
+  font-size: 32px;
+}
+
+.card__subtitle {
+  font-size: 18px;
+}
+.card__subtitle .card__title, .card__subtitle {
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.card__image {
+  width: 295px;
+  height: 251px;
+  align-self: center;
+  position: relative;
+  z-index: 999;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+}
+.card__image::after {
+  /*shadow*/
+  content: "";
+  width: 195px;
+  height: 38px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  opacity: 10%;
+  z-index: -1;
+  left: 50px;
+  bottom: -30px;
+  filter: blur(12px);
+}
+
+.card__price {
+  width: 136px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 15px;
+  z-index: 999;
+}
+.card__price > span {
+  color: #ae1332;
 }/*# sourceMappingURL=main.css.map */
