@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="to-order">
+        <div class="container">
+      <h2 class="to-order__tittel">
+        To order your fruit basket,<br>
+        simply follow these easy steps
+      </h2>
+      <p class="to-order__text">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home. Whether you're looking for a healthy snack or a thoughtful
+        gift, our fruit baskets are the perfect choice.
+      </p>
+      <ul class="to-order__cardlist">
+        <li class="to-order__card">
+          <p class="to-order__card-tittle">FIrst Step</p>
+          <p class="to-order__card-text">Just choose the fruit you want to order by clicking on the checkboxes next to it.</p>
+        </li>
+        <li class="to-order__card">
+          <p class="to-order__card-tittle">Second Step</p>
+          <p class="to-order__card-text">Click on the basket and fill out the form.</p>
+        </li>
+        <li class="to-order__card">
+          <p class="to-order__card-tittle">Third Step</p>
+          <p class="to-order__card-text">Sit back and relax! Your fresh fruit basket will be delivered.</p>
+        </li>
+      </ul>
+      <div class="to-order__img">
+        <picture>
+          <source media="(min-width: 1200px)"
+        srcset="
+       toorder/blueberry-desktop@1x.jpg 1x, 
+       toorder/blueberry-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+        srcset="
+        toorder/blueberry-tablet@1x.jpg 1x, 
+        toorder/blueberry-tablet@2x.jpg 2x">
+  <img 
+    src="toorder/blueberry-mobile@1x.jpg"
+    srcset="
+      toorder/blueberry-mobile@1x.jpg 1x,
+      toorder/blueberry-mobile@2x.jpg 2x
+    "
+    alt="Blueberry">
+        </picture>
+      </div>
+      </div>
+    </section>
+  </body>
+</html>
