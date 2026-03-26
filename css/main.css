@@ -276,6 +276,7 @@ ul {
   }
   .to-order__cardlist {
     display: flex;
+    gap: 20px;
   }
   .to-order__img {
     max-width: 860px;
