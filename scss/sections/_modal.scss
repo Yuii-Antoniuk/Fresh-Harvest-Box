@@ -1,19 +1,12 @@
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 .open-btn {
   display: block;
   margin: 40px auto;
   padding: 12px 24px;
   border: none;
-  border-radius: 20px;
   background: #9dc45a;
   color: white;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 55px;
   height: 90px;
 }
 
@@ -26,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  z-index: 1000;
 }
 
 /* HIDDEN */
@@ -38,10 +32,10 @@ body {
 /* MODAL */
 .modal {
   width: 100%;
-  max-width: 1100px;
-  background: #f7f7f7;
-  border-radius: 20px;
-  padding: 30px;
+  //max-width: 1100px;
+  background: $main-color;
+ // border-radius: 20px;
+  //padding: 30px;
   position: relative;
   display: flex;
   flex-direction: column;

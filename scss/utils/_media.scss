@@ -1,14 +1,12 @@
-// to order media
-@media (min-width: 480px) {
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 734px;
   }
+
   .to-order__card {
     max-width: 389px;
   }
+
   .to-order__tittel {
     max-width: 624px;
     width: 100%;
@@ -17,6 +15,7 @@
     font-weight: 500;
     line-height: 44px;
   }
+
   .to-order__text {
     max-width: 509px;
     width: 100%;
@@ -29,6 +28,11 @@
   .container {
     max-width: 1200px;
   }
+
+  .cardslist__item-kiwi {
+    display: flex;
+  }
+
   .to-order__tittel {
     max-width: 624px;
     width: 100%;
@@ -37,16 +41,19 @@
     font-weight: 500;
     line-height: 44px;
   }
+
   .to-order__text {
     max-width: 509px;
     width: 100%;
     height: auto;
     font-size: 14px;
   }
+
   .to-order__cardlist {
     display: flex;
     gap: 20px;
   }
+  
   .to-order__img {
     max-width: 860px;
     margin: 0 auto;
