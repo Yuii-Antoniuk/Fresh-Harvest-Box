@@ -49,23 +49,11 @@
         </li>
       </ul>
       <div class="to-order__img">
-        <picture>
-          <source media="(min-width: 1200px)"
-        srcset="
-           imgs/blueberry-desktop@1x.jpg 1x,
-           imgs/blueberry-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)"
-        srcset="
-        imgs/blueberry-tablet@1x.jpg 1x, 
-        imgs/blueberry-tablet@2x.jpg 2x">
-  <img 
-    src="imgs/blueberry-mobile@1x.jpg"
-    srcset="
-      imgs/blueberry-mobile@1x.jpg 1x,
-      imgs/blueberry-mobile@2x.jpg 2x
-    "
-    alt="Blueberry">
-        </picture>
+        <video autoplay muted loop playsinline class="to-order__video">
+          <source src="./imgs/blueberry.mp4" type="video/mp4">
+          <source src="./imgs/blueberry.mp4" media="(min-width: 768px)" type="video/mp4">
+          <source src="./imgs/blueberry.mp4" media="(min-width: 1200px)" type="video/mp4">
+        </video>
       </div>
       </div>
     </section>

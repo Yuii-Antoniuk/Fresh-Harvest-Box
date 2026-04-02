@@ -61,13 +61,27 @@
 .to-order__card:nth-child(3) .to-order__card-tittle {
   background-color: #F5CE13;
 }
-.to-order__img img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.to-order__img{
+    background-image: image-set(
+    url("../imgs/blueberry-mobile@1x.jpg") 1x,
+    url("../imgs/blueberry-mobile@2x.jpg") 2x
+  );
+  background-size: cover;
+  background-position: center;
     border-radius:29px ;
+    max-width: 335px;
     width: 100%;
    margin: 0 auto;
    margin-top: 44px;
+   height: 476px;
+}
+.to-order__video {
+  
+ width: 100%;
+  max-width: 336px;
+  height: 476px;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: 20px;
 }
    
