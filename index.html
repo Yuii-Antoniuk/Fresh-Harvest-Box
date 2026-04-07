@@ -188,52 +188,73 @@
 
     <section class="modal">
 
-      <button class="open-btn" data-open-modal>ORDER</button>
+   <button class="open-btn" data-open-modal>Open modal</button>
 
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="close-btn" data-close-modal>&times;</button>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
 
-          <h2 class="title">YOUR ORDER</h2>
+    <button class="close-btn" data-close-modal>&times;</button>
 
-          <div class="cards">
-            <div class="card strawberry">
-              <div class="checkbox"> <input type="checkbox"></div>
-              <h3>Strawberry Basket</h3>
-              <p>Plant</p>
-          <img src="./imgs/strawberrybasket.png" srcset="./imgs/strawberrybasket@2x.png 2x" alt="">
-            </div>
+    <h2 class="title">YOUR ORDER</h2>
 
-            <div class="card apple">
-              <div class="checkbox"> <input type="checkbox"></div>
-              <h3>Apple Basket</h3>
-              <p>Plant</p>
-          <img src="./imgs/applebasket.png" srcset="./imgs/applebasket@2x.png 2x" alt="">
-            </div>
+    <div class="cards">
+      <div class="card strawberry">
+        <div class="checkbox"></div>
+        <h3>Strawberry Basket</h3>
+        <p>Plant</p>
 
-            <div class="card fruits">
-              <div class="checkbox"> <input type="checkbox"></div>
-              <h3>Fruits Basket</h3>
-              <p>Plant</p>
-            <img src="./imgs/fruitsbasket.png" srcset="./imgs/fruitsbasket@2x.png 2x" alt="">
-            </div>
-          </div>
-
-          <div class="content">
-            <form class="form">
-              <input type="text" placeholder="Enter full name..." />
-              <input type="email" placeholder="Enter email..." />
-              <input type="text" placeholder="Enter card..." />
-              <textarea placeholder="Enter comments..."></textarea>
-              <button type="submit">Submit</button>
-            </form>
-
-            <div class="image">
-             <img src="./imgs/girlmodal.png" srcset="./imgs/girlmodal@2x.png 2x" alt="">
-            </div>
-          </div>
-        </div>
+        <img 
+          src="images/strawberrybasket@1x.png"
+          srcset="images/strawberrybasket@1x.png 1x, images/strawberrybasket@2x.png 2x"
+          alt="Strawberry"
+        />
       </div>
+
+      <div class="card apple">
+        <div class="checkbox"></div>
+        <h3>Apple Basket</h3>
+        <p>Plant</p>
+
+        <img 
+          src="images/applebasket@1x.png"
+          srcset="images/applebasket@1x.png 1x, images/applebasket@2x.png 2x"
+          alt="Apple"
+        />
+      </div>
+
+      <div class="card fruits">
+        <div class="checkbox"></div>
+        <h3>Fruits Basket</h3>
+        <p>Plant</p>
+
+        <img 
+          src="images/fruitbasket@1x.png"
+          srcset="images/fruitbasket@1x.png 1x, images/fruitbasket@2x.png 2x"
+          alt="Fruits"
+        />
+      </div>
+    </div>
+
+    <div class="content">
+      <form class="form">
+        <input type="text" placeholder="Enter full name..." />
+        <input type="email" placeholder="Enter email..." />
+        <input type="text" placeholder="Enter card..." />
+        <textarea placeholder="Enter comments..."></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="image">
+        <img 
+          src="imgs/modalgirl.png"
+          srcset="imgs/modalgirl.png 1x, imgs/modalgirl@2x.png 2x"
+          alt="Girl"
+        />
+      </div>
+    </div>
+
+  </div>
+</div>
     </section>
     <section class="promo">
       <div class="container promo__container">

@@ -15,8 +15,6 @@ function toggleModal() {
 openBtn.addEventListener("click", toggleModal);
 closeBtn.addEventListener("click", toggleModal);
 
-backdrop.addEventListener("click", event => {
-  if (event.target === backdrop) {
-    toggleModal();
-  }
+backdrop.addEventListener("click", (e) => {
+  if (e.target === backdrop) toggleModal();
 });
