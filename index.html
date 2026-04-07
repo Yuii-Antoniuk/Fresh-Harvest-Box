@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
     rel="stylesheet" />
@@ -41,32 +42,32 @@
     <!-- to order-Dima -->
     <section class="to-order">
       <div class="container">
-        <h2 class="to-order__tittel">
+        <h2 class="to-order__tittel" data-aos="zoom-in">
           To order your fruit basket,<br>
           simply follow these easy steps
         </h2>
-        <p class="to-order__text">
+        <p class="to-order__text" data-aos="zoom-in">
           Our baskets are assembled with care and delivered straight to your
           doorstep, so you can enjoy the taste of fresh fruit without ever leaving
           your home. Whether you're looking for a healthy snack or a thoughtful
           gift, our fruit baskets are the perfect choice.
         </p>
         <ul class="to-order__cardlist">
-          <li class="to-order__card">
+          <li class="to-order__card" data-aos="zoom-out-right">
             <p class="to-order__card-tittle">FIrst Step</p>
             <p class="to-order__card-text">Just choose the fruit you want to order by clicking on the checkboxes next to
               it.</p>
           </li>
-          <li class="to-order__card">
+          <li class="to-order__card" id="to-order" data-aos="zoom-out-down">
             <p class="to-order__card-tittle">Second Step</p>
             <p class="to-order__card-text">Click on the basket and fill out the form.</p>
           </li>
-          <li class="to-order__card">
+          <li class="to-order__card" data-aos="zoom-out-left">
             <p class="to-order__card-tittle">Third Step</p>
             <p class="to-order__card-text">Sit back and relax! Your fresh fruit basket will be delivered.</p>
           </li>
         </ul>
-        <div class="to-order__img">
+        <div class="to-order__img" data-aos="zoom-in">
           <video autoplay muted loop playsinline class="to-order__video">
             <source src="./imgs/blueberry.mp4" type="video/mp4">
             <source src="./imgs/blueberry.mp4" media="(min-width: 768px)" type="video/mp4">
@@ -329,6 +330,13 @@
   <script src="https://unpkg.com/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
   <script src="./js/mobile-menu.js"></script>
   <script src="./js/project.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    duration: 800,   
+    once: true       
+  });
+</script>
 </body>
 
 </html>
