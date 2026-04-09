@@ -471,81 +471,110 @@ footer {
   border-radius: 20px;
 }
 
-.open-btn {
-  display: block;
-  margin: 40px auto;
-  padding: 12px 24px;
-  border: none;
-  background: #9dc45a;
-  color: white;
-  cursor: pointer;
-  border-radius: 55px;
-  height: 90px;
-}
-
-/* BACKDROP */
 .backdrop {
   position: fixed;
+  height: 100%;
+  width: 100%;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  z-index: 1000;
+  z-index: 1001;
 }
 
-/* HIDDEN */
+.modal-open-btn {
+  padding: 12px 24px;
+  border-radius: 50%;
+  background: #9dc45a;
+  color: #fff;
+  display: block;
+  width: 114px;
+  height: 114px;
+  border: none;
+  transform: rotate(-14deg);
+  position: relative;
+  top: 50px;
+  left: 975px;
+}
+
+.modal-arrow {
+  transform: rotate(14deg);
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-/* MODAL */
-.modal {
-  width: 100%;
-  background: #AE1332;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+.strawberry-basket {
+  position: absolute;
+  width: 173px;
+  height: 196px;
+  bottom: 14px;
+  left: 34px;
+  display: block;
 }
 
-/* CLOSE */
-.close-btn {
+.modal-fruitbasket {
+  display: block;
+  position: absolute;
+  width: 229px;
+  height: 196px;
+  bottom: 14px;
+  left: 34px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 891px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-close-btn {
   position: absolute;
   top: 15px;
   right: 20px;
+  font-size: 32px;
   border: none;
   background: none;
-  font-size: 32px;
-  color: red;
-  cursor: pointer;
+  color: #b91c3a;
 }
 
-/* TITLE */
 .title {
-  color: #b91c3a;
   font-size: 40px;
+  color: #b91c3a;
   margin-bottom: 20px;
 }
 
-/* CARDS */
 .cards {
   display: flex;
   gap: 20px;
   margin-bottom: 30px;
 }
 
-/* CARD */
 .card {
   flex: 1;
   border-radius: 20px;
   padding: 20px;
-  color: white;
-  position: relative;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .strawberry {
@@ -566,22 +595,13 @@ footer {
   right: 10px;
   width: 16px;
   height: 16px;
-}
-
-.card h3 {
-  margin: 0;
-}
-
-.card p {
-  margin: 5px 0 0;
-  font-size: 14px;
+  border: 2px solid white;
+  border-radius: 4px;
 }
 
 .card img {
   margin-top: auto;
   max-height: 120px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 /* CONTENT */
@@ -591,7 +611,6 @@ footer {
   align-items: flex-end;
 }
 
-/* FORM */
 .form {
   flex: 1;
   display: flex;
@@ -604,25 +623,21 @@ footer {
   padding: 14px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  outline: none;
 }
 
 .form textarea {
   height: 100px;
-  resize: none;
 }
 
 .form button {
   width: 120px;
   padding: 12px;
-  border: none;
   border-radius: 20px;
   background: #9dc45a;
-  color: white;
-  cursor: pointer;
+  color: #fff;
+  border: none;
 }
 
-/* IMAGE */
 .image {
   flex: 1;
   display: flex;
@@ -632,6 +647,26 @@ footer {
 
 .image img {
   max-height: 300px;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .modal {
+    max-width: 335px;
+    padding: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .image {
+    display: none;
+  }
+}
+.modal {
+  background: #ffffff;
 }
 
 @media (min-width: 768px) {

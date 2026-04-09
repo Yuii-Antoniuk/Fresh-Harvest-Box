@@ -186,14 +186,16 @@
 
     <!--  Fresh Harvest Box-andriy -->
 
-    <section class="modal">
+    <section class="modal-section">
 
-   <button class="open-btn" data-open-modal>Open modal</button>
+   <button class="modal-open-btn" data-open-modal>
+    <svg class="modal-arrow"><use href="./imgs_and_svgs-hero/symbol-defs.svg#arrow-modal"></use></svg>
+    ORDER</button>
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
 
-    <button class="close-btn" data-close-modal>&times;</button>
+    <button class="modal-close-btn" data-close-modal>&times;</button>
 
     <h2 class="title">YOUR ORDER</h2>
 
@@ -203,7 +205,7 @@
         <h3>Strawberry Basket</h3>
         <p>Plant</p>
 
-        <img 
+        <img class="strawberry-basket"
           src="imgs/strawberrybasket@1x.png"
           srcset="imgs/strawberrybasket@1x.png 1x, imgs/strawberrybasket@2x.png 2x"
           alt="Strawberry"
@@ -227,7 +229,7 @@
         <h3>Fruits Basket</h3>
         <p>Plant</p>
 
-        <img 
+        <img  class="modal-fruitbasket"
           src="imgs/fruitbasket@1x.png"
           srcset="imgs/fruitbasket@1x.png 1x, imgs/fruitbasket@2x.png 2x"
           alt="Fruits"
