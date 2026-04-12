@@ -1,7 +1,7 @@
 .js-menu-container {
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 50px);
-    background-color: #AE1332;
+    background-color: $main-color;
     position: fixed;
     transform: translateX(100%);
     transition-property: transform;
@@ -18,7 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: $second-main-color;
+    pointer-events: none;
     transform: translateX(50px);
     margin-right: 8px;
     z-index: 1000 !important;
@@ -32,10 +33,10 @@
     width: 24px;
     height: 24px;
     align-self: center;
-    fill: #AE1332;
+    fill: $main-color;
     cursor: pointer;
     z-index: 0;
-    background-color: #FFFFFF;
+    background-color: $second-main-color;
 }
 
 .mobilemenu__close-icon {
@@ -44,9 +45,11 @@
     display: block;
 }
 
+.js-menu-container.is-open {
+    transform: translateX(0);
+}
 
-.js-menu-container.is-open,
-.is-open .js-close-menu  {
+.is-open .js-close-menu {
     transform: translateX(0px);
 }
 
@@ -60,7 +63,14 @@ body.no-scroll {
     z-index: 1;
     border: none;
     outline: none;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: $transperent-color;
+    align-self: center;
+}
+
+.js-open-menu > svg {
+    width: 24px;
+    height: 24px;
+    fill: $main-color;
 }
 
 .mobilemenu__container {
@@ -75,18 +85,24 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    list-style: none;
 }
 
 .mobilemenu__link {
-    color: #FFFFFF;
+    color: $second-main-color;
     font-size: 14px;
     text-align: center;
     height: 24px;
     letter-spacing: -4%;
 }
 
+.mobilemenu__link a {
+    text-decoration: none;
+    color: $second-main-color;
+}
+
 .icon-shop-icon {
     width: 24px;
     height: 24px;
-    fill: #FFFFFF;
+    fill: $second-main-color;
 }

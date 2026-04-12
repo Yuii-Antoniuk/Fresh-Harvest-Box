@@ -1,7 +1,7 @@
 .organicfruits {
   min-height: 1215px;
-  background-color: #AE1332;
-  color: white;
+  background-color: $main-color;
+  color: $second-main-color;
   margin-top: 150px;
 }
 
@@ -48,50 +48,62 @@
   gap: 16px;
 }
 
+.cardslist__item__container {
+  width: 335px;
+  height: 465px;
+  padding: 24px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: box-shadow 0.5s ease-in-out 100ms;
+  box-shadow: 0px 0px 62px 0px $transperent-color;
+}
+
+.cardslist__item__container:hover {
+  box-shadow: 0px 0px 62px 0px rgba(255,255,255,0.65);
+}
+
 .cardslist__item {
   width: 335px;
   height: 465px;
   border-radius: 20px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .cardslist__item-strawbery {
-  background-color: #F8766B;
+  background-color: $strawbery-color;
 }
 
 .cardslist__item-banana {
-  background-color: #EDD251;
+  background-color: $banana-color;
 }
 
 .cardslist__item-watermelon {
-  background-color: #9DC262;
+  background-color: $watermelon-color;
 }
 
 .cardslist__item-lime {
-  background-color: #BFD663;
+  background-color: $lime-color;
 }
 
 .cardslist__item-aple {
-  background-color: #E93F29;
+  background-color: $aple-color;
 }
 
 .cardslist__item-peach {
-  background-color: #DB4F4B;
+  background-color: $peach-color;
 }
 
 .cardslist__item-plumus {
-  background-color: #9B5366;
+  background-color: $plumus-color;
 }
 
 .cardslist__item-orange {
-  background-color: #F47F4C;
+  background-color: $orange-color;
 }
 
 .cardslist__item-kiwi {
-  background-color: #98B37E;
+  background-color: $kiwi-color;
   display: none;
 }
 
@@ -123,12 +135,16 @@
   height: 38px;
   border-radius: 50%;
   position: absolute;
-  background-color: black;
+  background-color: $fruits-shadow-color;
   opacity: 10%;
   z-index: -1;
   left: 50px;
   bottom: -30px;
   filter: blur(12px);
+  transition-property: filter;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 100ms;
 }
 
 .card__price {
@@ -137,12 +153,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: $second-main-color;
   border-radius: 25px;
   margin-top: 15px;
   z-index: 999;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
 }
 
 .card__price > span {
-  color: #AE1332;
+  color: $main-color;
+}
+
+.card__price:hover {
+  background-color: #9b9b9b;
+}
+
+.card__price__span {
+  color: $main-color;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 200ms;
+}
+
+.card__price:hover .card__price__span {
+  color: $second-main-color;
 }

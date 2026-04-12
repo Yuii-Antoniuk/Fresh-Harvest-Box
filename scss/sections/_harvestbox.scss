@@ -23,7 +23,7 @@
     font-weight: 500;
     font-size: 64px;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
     width: 100%;
     z-index: 10; 
 }
@@ -66,10 +66,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: $promo-form-color;
     border-radius: 100px;
     background-color: transparent; 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid $promo-form-border-color;
     max-width: 292px;
     height: 48px;
     padding-left: 20px; 
@@ -80,19 +80,19 @@
 
 .promo__input {
     background-color: transparent; 
-    color: rgba(255, 255, 255, 0.38);
+    color: $promo-input-text-color;
     border: none;
     outline: none;
     flex: 1;
 }
 
 .promo__input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
+    color: $promo-input-placeholder-color;
 }
 
 .promo__button {
-    background-color: #A4CB66;
-    color: #ffffff;
+    background-color: $promo-button-color;
+    color: $second-main-color;
     width: 102px;
     height: 100%;
     height: 48px;
@@ -103,13 +103,13 @@
 }
 
 .promo__button:hover {
-    background-color: #FFFFFF;
-    color: #9DC262;
+    background-color: $second-main-color;
+    color: $promo-button-hover-text-color;
 }
 
 footer {
-  background-color: #ffffff;
-  color: #AE1332;
+  background-color: $second-main-color;
+  color: $main-color;
   min-height: 450px; 
   display: flex;
   align-items: center; 
@@ -174,30 +174,30 @@ footer {
 .footer__social-link {
   width: 44px;
   height: 44px;
-  border: 1px solid #AE1332;
+  border: 1px solid $main-color;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #AE1332;
+  color: $main-color;
   transition: background-color 0.3s ease;
 }
 
 .footer__social-link:hover {
-  background-color: rgba(174, 19, 50, 0.1)
+  background-color: $footer-link-text-color;
 }
 
 .footer__social-logo{
   width: 16px;
   height: 16px;
-  fill: #AE1332;
+  fill: $main-color;
 }
 
 .footer__social-icon {
   width: 28px;
   height: 28px;
-  fill: #AE1332;
+  fill: $main-color;
 }
 
 .footer__contacts {

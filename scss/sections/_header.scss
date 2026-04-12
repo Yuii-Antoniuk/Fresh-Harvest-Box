@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50px;
+    background-color: $second-main-color;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $main-color;
+}
+
+.header__title-icon {
+    width: 16px;
+    height: 16px;
+    display: block;
+    fill: $main-color;
+    margin-right: 8px;
+
+}
+
+.header__nav-list {
+    display: none;
+}
+
+.header__shop-icon {
+    display: none;
+    transition: 300ms;
+}
+
+
+.menu__mobile-icon,
+.header__shop-icon {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    fill: $main-color;
+    cursor: pointer;
+}
+
+.header__nav-list {
+    list-style: none;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.img__header-container {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+use {
+    align-self: center;
+}
+.header__nav-item a {
+    color: $main-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+
+}
+
+.header__nav-item {
+    transition: 300ms;
+}
+
+.header__nav-item:hover {
+    text-decoration: underline 2px $main-color;
+    transform: scale(1.2);
+}
+
+.header__shop-icon:hover {
+    transform: scale(1.3);
+}
+
