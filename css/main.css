@@ -36,6 +36,7 @@ header {
 .header__title {
   display: flex;
   align-items: center;
+  gap: 8px;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -47,7 +48,7 @@ header {
   height: 16px;
   display: block;
   fill: #AE1332;
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 .header__nav-list {
@@ -343,6 +344,11 @@ body.no-scroll {
   align-self: center;
   position: relative;
   z-index: 999;
+}
+
+.card__image__img {
+  width: 295px;
+  height: 251px;
 }
 
 .card__image::after { /*shadow*/
@@ -652,6 +658,7 @@ footer {
 
 .to-order__card-text {
   width: 145px;
+  color: #000000;
 }
 
 .to-order__card-tittle {
@@ -706,6 +713,8 @@ footer {
 
 .backdrop {
   position: fixed;
+  height: 100%;
+  width: 100%;
   inset: 0;
   background: rgba(0, 0, 0, 0);
   opacity: 0;
@@ -714,12 +723,56 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1001;
+}
+
+.modal-open-btn {
+  padding: 12px 24px;
+  border-radius: 50%;
+  background: #9dc45a;
+  color: #fff;
+  display: block;
+  width: 114px;
+  height: 114px;
+  border: none;
+  transform: rotate(-14deg);
+  position: relative;
+  top: 50px;
+  left: 975px;
+}
+
+.modal-arrow {
+  transform: rotate(14deg);
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 15px;
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.strawberry-basket {
+  position: absolute;
+  width: 173px;
+  height: 196px;
+  bottom: 14px;
+  left: 34px;
+  display: block;
+}
+
+.modal-fruitbasket {
+  display: block;
+  position: absolute;
+  width: 229px;
+  height: 196px;
+  bottom: 14px;
+  left: 34px;
 }
 
 .modal {
@@ -733,7 +786,7 @@ footer {
   position: relative;
 }
 
-.close-btn {
+.modal-close-btn {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -853,6 +906,10 @@ footer {
     display: none;
   }
 }
+.modal {
+  background: #FFFFFF;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 734px;

@@ -129,6 +129,11 @@
   z-index: 999;
 }
 
+.card__image__img {
+  width: 295px;
+  height: 251px;
+}
+
 .card__image::after {/*shadow*/
   content: "";
   width: 195px;

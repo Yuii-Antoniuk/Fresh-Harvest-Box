@@ -16,6 +16,7 @@ header {
 .header__title {
     display: flex;
     align-items: center;
+    gap: 8px; 
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -27,7 +28,7 @@ header {
     height: 16px;
     display: block;
     fill: $main-color;
-    margin-right: 8px;
+    margin-left: 8px;
 
 }
 

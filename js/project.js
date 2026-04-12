@@ -1,15 +1,17 @@
-const openBtn = document.querySelector("[data-open-modal]");
-const closeBtn = document.querySelector("[data-close-modal]");
-const backdrop = document.querySelector("[data-modal]");
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-open-modal]"),
+    closeModalBtn: document.querySelector("[data-close-modal]"),
+    modal: document.querySelector("[data-modal]"),
+  };
 
-function toggleModal() {
-  backdrop.classList.toggle("is-hidden");
-  updateScrollLock(); // ✅ ДОДАЙ ОЦЕ
-}
+  if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
 
-openBtn.addEventListener("click", toggleModal);
-closeBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
 
-backdrop.addEventListener("click", (e) => {
-  if (e.target === backdrop) toggleModal();
-});
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
+  }
+})();
