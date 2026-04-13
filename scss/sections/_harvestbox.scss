@@ -156,7 +156,10 @@ footer {
   font-size: 14px;
   font-weight: 400;
   cursor: pointer;
+}
 
+.footer__item:hover {
+  color: crimson;
 }
 
 .footer__info {
