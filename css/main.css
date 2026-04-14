@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -269,7 +273,7 @@ body.no-scroll {
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  max-width: 266px;
+  max-width: 320px;
   margin: 0 auto;
   order: 3;
   padding: 44px 0;
@@ -284,7 +288,6 @@ body.no-scroll {
   line-height: 14px;
   text-decoration: none;
   color: #FFFFFF;
-  transition: color 200ms ease-in-out 100ms, bacground-color 200ms ease-in-out 100ms;
 }
 
 .hero__hashtags-item:hover {
@@ -756,6 +759,10 @@ footer {
   cursor: pointer;
 }
 
+.footer__item:hover {
+  color: crimson;
+}
+
 .footer__info {
   display: flex;
   flex-direction: column;
@@ -905,10 +912,9 @@ footer {
   height: 100%;
   width: 100%;
   inset: 0;
-  background: rgba(0, 0, 0, 0);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -920,14 +926,31 @@ footer {
   border-radius: 50%;
   background: #9dc45a;
   color: #fff;
-  display: block;
+  display: flex;
   width: 114px;
   height: 114px;
   border: none;
   transform: rotate(-14deg);
-  position: relative;
-  top: 50px;
-  left: 975px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.modal-open-btn:hover {
+  transform: rotate(0deg);
+  background-color: #FFFFFF;
+  color: #9DC262;
+}
+
+.modal-open-btn:hover svg {
+  fill: #9DC262;
+}
+
+.modal-section {
+  padding-top: 44px;
 }
 
 .modal-arrow {
@@ -966,8 +989,8 @@ footer {
 
 .modal {
   width: 100%;
-  max-width: 1100px;
-  background: #FFFFFF;
+  max-width: 891px;
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 30px;
   display: flex;
@@ -982,12 +1005,21 @@ footer {
   font-size: 32px;
   border: none;
   background: none;
-  color: #B91C3A;
+  color: #b91c3a;
+  cursor: pointer;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9.67px;
+}
+
+.modal-close-btn:hover {
+  border: 2px #AE1332 solid;
 }
 
 .title {
   font-size: 40px;
-  color: #B91C3A;
+  color: #b91c3a;
   margin-bottom: 20px;
 }
 
@@ -1001,22 +1033,23 @@ footer {
   flex: 1;
   border-radius: 20px;
   padding: 20px;
-  color: #FFFFFF;
+  color: #fff;
   display: flex;
   flex-direction: column;
   position: relative;
+  max-height: 250px;
 }
 
 .strawberry {
-  background: #F57A6F;
+  background: #f57a6f;
 }
 
 .apple {
-  background: #E6C84F;
+  background: #e6c84f;
 }
 
 .fruits {
-  background: #94C060;
+  background: #94c060;
 }
 
 .checkbox {
@@ -1025,7 +1058,7 @@ footer {
   right: 10px;
   width: 16px;
   height: 16px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid white;
   border-radius: 4px;
 }
 
@@ -1052,7 +1085,7 @@ footer {
 .form textarea {
   padding: 14px;
   border-radius: 20px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
 }
 
 .form textarea {
@@ -1063,9 +1096,10 @@ footer {
   width: 120px;
   padding: 12px;
   border-radius: 20px;
-  background: #9DC45A;
-  color: #FFFFFF;
+  background: #9dc45a;
+  color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .image {
@@ -1096,7 +1130,7 @@ footer {
   }
 }
 .modal {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 @media (max-widht: 768px) {

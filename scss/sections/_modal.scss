@@ -1,4 +1,4 @@
-.backdrop {
+    .backdrop {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -18,15 +18,31 @@
   border-radius: 50%;
   background: #9dc45a;
   color: #fff;
-  display: block;
+  display: flex;
   width: 114px;
   height: 114px;
   border: none;
   transform: rotate(-14deg);
-  position: relative;
-  top: 50px;
-  left: 975px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  cursor: pointer;
+  transition: transform 200ms;
+}
 
+.modal-open-btn:hover {
+    transform: rotate(0deg);
+    background-color: $second-main-color;
+    color: $promo-button-hover-text-color;
+}
+
+.modal-open-btn:hover svg {
+  fill: $promo-button-hover-text-color;
+}
+
+.modal-section {
+  padding-top: 44px;
 }
 
 .modal-arrow {
@@ -83,6 +99,15 @@
   border: none;
   background: none;
   color: #b91c3a;
+  cursor: pointer;
+  border-radius: 1000px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 9.67px;
+}
+
+.modal-close-btn:hover {
+  border: 2px $main-color solid;
 }
 
 .title {
@@ -105,6 +130,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  max-height: 250px;
 }
 
 .strawberry { background: #f57a6f; }
@@ -158,6 +184,7 @@
   background: #9dc45a;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .image {

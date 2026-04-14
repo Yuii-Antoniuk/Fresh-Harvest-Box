@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
-    max-width: 266px;
+    max-width: 320px;
     margin: 0 auto;
     order: 3;
     padding: 44px 0;
@@ -57,9 +57,6 @@
     line-height: 14px;
     text-decoration: none;
     color: $second-main-color;
-    transition: 
-    color 200ms ease-in-out 100ms,
-    bacground-color 200ms ease-in-out 100ms;
 }
 
 .hero__hashtags-item:hover {
