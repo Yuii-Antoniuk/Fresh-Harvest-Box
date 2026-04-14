@@ -41,8 +41,14 @@ header {
     transition: 300ms;
 }
 
+.menu__mobile-icon {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    fill: $main-color;
+    cursor: pointer;
+}
 
-.menu__mobile-icon,
 .header__shop-icon {
     width: 24px;
     height: 24px;
@@ -61,6 +67,7 @@ header {
     width: 200px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 use {
@@ -77,6 +84,9 @@ use {
 
 .header__nav-item {
     transition: 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__nav-item:hover {

@@ -28,7 +28,8 @@
     />
     <title>Fresh Harvest Box</title>
   </head>
-  <body>
+  <body>      
+
     <header>
         <div class="container">
             <nav class="header__navigation">
@@ -40,19 +41,20 @@
 
                 <h1 class="header__title"><!--<svg class="header__title-icon" data-aos="flip-down"></svg>-->
                     <svg class="menu__mobile-icon">
-                        <use href="./imgs_and_svgs-hero/symbol-defs.svg#icon-logo">
-                    </svg>FRESH HARVEST BOX</h1>
+                        <use href="./imgs/svg/symbol-defs.svg#icon-logo"></use>
+                    </svg>FRESH HARVEST BOX
+                </h1>
 
                 <div class="img__header-container">
                     <a href="#organicfruits">
                       
                     <svg class="header__shop-icon">
-                        <use href="./imgs_and_svgs-hero/symbol-defs.svg#icon-shop-icon">
+                        <use href="./imgs/svg/symbol-defs.svg#icon-shop-icon1">
                     </svg>
                     </a>
                   <button class="js-open-menu">
                     <svg aria-expanded="false">
-                        <use href="./imgs_and_svgs-hero/symbol-defs.svg#icon-menu-mobile">
+                        <use href="./imgs/svg/symbol-defs.svg#icon-menu-mobile">
                     </svg>
                   </button>
                 </div>
@@ -64,7 +66,7 @@
     <div class="js-menu-container">
         <button class="js-close-menu">
             <svg class="mobilemenu__close-icon">
-                <use href="./imgs_and_svgs-hero/symbol-defs.svg#mobilemenu-close-icon"></use>
+                <use href="./imgs/svg/symbol-defs.svg#mobilemenu-close-icon"></use>
             </svg>
         </button>
         <div class="mobilemenu__container">
@@ -76,7 +78,7 @@
                     <li class="mobilemenu__link">
                         <a href="">
                           <svg class="icon-shop-icon">
-                            <use href="./symbol-defs.svg#icon-shop-icon"></use>
+                            <use href="./symbol-defs.svg#icon-shop-icon1  "></use>
                           </svg>
                         </a>
                     </li>
@@ -86,7 +88,81 @@
     </div>
   <main>
     <!-- hero-ihor -->
+     <section class="hero">
+        <div class="container">
+            <h2 class="hero__title" data-aos="zoom-in">fresh harvest box <br> is your one-stop place <br> for a delicious fruit <br> basket
+            </h2>
+            <div class="container-cards">
+                <div class="hero__card-1" data-aos="zoom-out-right">
+                    <p class="hero__card1-text">Our expertly curated fruit baskets are made with the freshest, highest
+                        quality fruits available.
+                        Whether you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got
+                        you
+                        covered.
+                    </p>
+                <div class="hero__card-fruit">
+                        <h4 class="card__fruit-title">Fruit</h4>
+                        <picture>
+                            <source srcset="./imgs/watermelon-card1.png 1x, ./imgs/watermelon-card1-2x.png 2x" media="(min-width: 320px)">
+                            <source srcset="./imgs/watermelon-card1.png 1x, ./imgs/watermelon-card1-2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./imgs/watermelon-card1.png 1x, ./imgs/watermelon-card1-2x.png 2x" media="(min-width: 1200px)">
+                        <img src="./imgs/strawberry-card3.png" class="card__fruit-img">
+                        </picture>
+                        <p class="card__fruit-subtitle">
+                          Refreshing and juicy, watermelon is the perfect summer treat and
+                            a
+                            great source of hydration
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="hero-img-2">
+                    <div class="hero__card-2">
+                        <div class="hero-img">
+                        <picture>
+                            <source srcset="./imgs/hero-img.jpg 1x, ./imgs/hero-img-2x.jpg 2x" media="(min-width: 320px)">
+                            <source srcset="./imgs/hero-img.jpg 1x, ./imgs/hero-img-2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./imgs/hero-img.jpg 1x, ./imgs/hero-img-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./imgs/hero-img.jpg" class="card__hero-img">
+                        </picture>
+                        </div>
+                        <a href="#organicfruits" class="card__hero-button">
+                          <span>SHOP NOW</span>
+                        </a>
+                    </div>
+                </div>
 
+                <div class="hero__card-3" data-aos="zoom-out-left">
+
+                    <div class="hero__card-fruit hero__card-fruit2">
+                        <h4 class="card__fruit-title">Fruit</h4>
+                        <picture>
+                            <source srcset="./imgs/strawberry-card3.png 1x, ./imgs/strawberry-card3-2x.png 2x" media="(min-width: 320px)">
+                            <source srcset="./imgs/strawberry-card3.png 1x, ./imgs/strawberry-card3-2x.png 2x" media="(min-width: 768px)">
+                            <source srcset="./imgs/strawberry-card3.png 1x, ./imgs/strawberry-card3-2x.png 2x" media="(min-width: 1200px)">
+                        <img src="./imgs/strawberry-card3.png" class="card__fruit-img">
+                        </picture>                        
+
+                        <p class="card__fruit-subtitle">Sweet and juicy, strawberries are packed with vitamin C and
+                            antioxidants, making them a
+                            delicious and healthy snack</p>
+                    </div>
+
+                    <div class="hero__hashtags">
+                        <a href="https://www.google.com/search?q=Products" target="_blank"
+                            class="hero__hashtags-item">#PRODUCTS</a>
+                        <a href="https://www.google.com/search?q=Organic" target="_blank"
+                            class="hero__hashtags-item">#ORGANIC</a>
+                        <a href="https://www.google.com/search?q=basket" target="_blank"
+                            class="hero__hashtags-item">#BASKET</a>
+                        <a href="https://www.google.com/search?q=Fruits" target="_blank"
+                            class="hero__hashtags-item">#FRUITS</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- to order-Dima -->
    <section class="to-order">
       <div class="container">
@@ -426,7 +502,7 @@
         <img src="./imgs/footer-girl.png" alt="Girl" class="footer__girl-img" />
         <div class="footer__brand">
           <svg class="footer__social-logo">
-            <use href="./imgs/svg/symbol-defs.svg#logo"></use>
+            <use href="./imgs/svg/symbol-defs.svg#icon-logo"></use>
           </svg>
           <span class="footer__brand-name">FRESH HARVEST BOX</span>
         </div>

@@ -1,0 +1,182 @@
+.hero {
+    background-color: $main-color;
+    color: $second-main-color;
+    padding-bottom: 100px
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding-top: 107px;
+    min-height: 810px;
+}
+
+.hero__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    position: absolute;
+    z-index: 100;
+    text-transform: uppercase;
+    top: 56px;
+    overflow: wrap;
+    align-self: center;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== HERO HASHTAGS ===== */
+
+.hero__hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 266px;
+    margin: 0 auto;
+    order: 3;
+    padding: 44px 0;
+}
+
+.hero__hashtags-item {
+    outline: 2px $second-main-color solid;
+    padding: 12px 32px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: $second-main-color;
+    transition: 
+    color 200ms ease-in-out 100ms,
+    bacground-color 200ms ease-in-out 100ms;
+}
+
+.hero__hashtags-item:hover {
+    background-color: $second-main-color;
+    color: $main-color;
+}
+
+.hero__hashtags-item:nth-child(3) {
+    padding: 12px 40px;
+}
+
+.hero__hashtags-item:nth-child(4) {
+    padding: 12px 40px;
+}
+
+
+/* ===== HERO CARDS ===== */
+
+.hero__card-fruit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A4CB66;
+    border-radius: 500px;
+    width: 249px;
+    height: 387px;
+    padding-top: 28px;
+}
+
+.hero__card-fruit2 {
+    background-color: #F5CE13;
+}
+
+.card__fruit-subtitle {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    width: 155px;
+    padding-bottom: 40px;
+}
+
+.card__hero-img {
+    border-radius: 500px;
+    outline: 3px solid $second-main-color;
+    outline-offset: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card__hero-button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: $second-main-color;
+    color: $main-color;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translate(-50%) rotate(-14deg);
+    z-index: 100;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.card__hero-button > span {
+    text-align: center;
+}
+
+.card__hero-button:hover {
+    color: #A4CB66;
+    transform: translate(-50%) rotate(0deg);
+}
+
+/* ===== HERO CARDS 2===== */
+
+.hero__card-1 {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* outline: 3px solid blue; */
+    width: 100%;
+}
+
+.hero__card-2 {
+    order: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 3px solid blue; */
+    width: 100%;
+}
+
+.hero__card-3 {
+    order: 3;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* outline: 3px solid blue; */
+    width: 100%;
+}
+
+.hero__card1-text {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.hero {
+    min-height: 500px;
+}
