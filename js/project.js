@@ -1,17 +1,24 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-open-modal]"),
-    closeModalBtn: document.querySelector("[data-close-modal]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+const backdrop = document.querySelector("[data-modal]");
 
-  if (!refs.openModalBtn || !refs.closeModalBtn || !refs.modal) return;
+function toggleModal() {
+  backdrop.classList.toggle("is-hidden");
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-    document.body.classList.toggle("no-scroll");
+  if (!backdrop.classList.contains("is-hidden")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
   }
-})();
+  updateScrollLock(); 
+}
+
+openBtn.addEventListener("click", toggleModal);
+closeBtn.addEventListener("click", toggleModal);
+
+backdrop.addEventListener("click", event => {
+  if (event.target === backdrop) {
+    toggleModal();
+  }
+});
+backdrop.addEventListener("click", (e) => {
+  if (e.target === backdrop) toggleModal();
+});
