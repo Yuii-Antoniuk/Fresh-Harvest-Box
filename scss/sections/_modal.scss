@@ -10,9 +10,9 @@
   justify-content: center;
   align-items: center;
   z-index: 1001;
-      overflow-y: auto;  // ← додай це
-    align-items: flex-start;  // ← змін з center на flex-start
-    padding: 20px 0;  // ← додай відступ зверху і знизу
+    overflow-y: auto;  
+    align-items: flex-start;  
+    padding: 20px 0;  
 }
 
 
@@ -230,7 +230,7 @@
     height: 250px;
   }
 
-  //оварпловіподаіп
+
 
   .backdrop {
     overflow-y: auto;
@@ -241,7 +241,7 @@
   .modal {
     max-width: 100%;
     padding: 20px;
-    position: relative; // прибери absolute
+    position: relative; 
     margin: 0 auto;
   }
 
@@ -251,7 +251,7 @@
   }
 
   .card {
-    max-height: none; // прибери обмеження висоти
+    max-height: none; 
     min-height: 100px;
   }
 
@@ -260,7 +260,7 @@
   }
 
   .image {
-    display: none; // картинка дівчини прихована
+    display: none; 
   }
 
   .form {
@@ -276,4 +276,35 @@
 
 .modal {
   background: $second-main-color;
+}
+
+.success-modal {
+  background: #e74c64;
+  color: #e74c64;
+  text-align: center;
+  max-width: 600px;
+}
+
+.success-img {
+  max-width: 200px;
+  margin: 0 auto 20px;
+}
+
+.success-title {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.success-text {
+  color: slategray;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.success-img{
+  left: 100px;
+  flex: auto;
+  width: 268px;
+  height: 239px;
 }
